@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms </title>
+    <style>
+        .header{
+            font-family: helvetica neue, Helvetica, Ariel, Sans-serif;
+        }
+    </style>
+</head>
+<body style="background-color:#ffa372">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div class="header">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="username" required>
+        </div> 
+        <div class="header">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Type your email" required>
+        </div>
+        <div class="header">
+            <label for="age">Age</label>
+            <input type="number" name="Age" id="age" min="3" max="170">
+        </div>
+        <div class="header">
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="2002-01-08" max="2020-01-21">
+        </div>
+        <div class="header">
+            <div> Suggestion:
+                <div>
+                    <label for="Query">Query</label>
+                    <input type="checkbox" name="Query" id="Query">
+                </div>
+                <div>
+                    <label for="info">Info</label> 
+                    <input type="checkbox" name="info" id="info">
+                </div>
+                <div>
+                    <label for="contact">Contact</label>
+                    <input type="checkbox" name="contact" id="contact">
+                </div>
+            </div>  
+        </div>
+        <div> 
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="male" value="male">
+        </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id="female" value="female">
+            </div>
+        </div>
+        <div>
+            <label for="message">message</label>
+            <textarea name="message" id="message" cols="40" rows="2">My name is shakil.</textarea>
+        </div>
+        <input type="hidden" name="hidden" value="hello">
+        <div>
+            <label for="file">file</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="color">color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="eyecolor">Eye Color</label>
+            <select name="eyecolor" id="eyecolor">
+                <option value="Black">Black</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Password 
+                <input type="password" name="password" required>
+            </label>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
